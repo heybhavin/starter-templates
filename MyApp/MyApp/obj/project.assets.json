@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "MyApp.BAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MyApp.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyApp.BAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApp.BAL.dll": {}
+        }
+      },
+      "MyApp.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MyApp.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApp.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyApp.BAL/1.0.0": {
+      "type": "project",
+      "path": "../MyApp.BAL/MyApp.BAL.csproj",
+      "msbuildProject": "../MyApp.BAL/MyApp.BAL.csproj"
+    },
+    "MyApp.DAL/1.0.0": {
+      "type": "project",
+      "path": "../MyApp.DAL/MyApp.DAL.csproj",
+      "msbuildProject": "../MyApp.DAL/MyApp.DAL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "MyApp.BAL >= 1.0.0",
+      "MyApp.DAL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\BHAVJOSH\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "c:\\Projects\\Starter Templates\\starter-templates\\MyApp\\MyApp\\MyApp.csproj",
+      "projectName": "MyApp",
+      "projectPath": "c:\\Projects\\Starter Templates\\starter-templates\\MyApp\\MyApp\\MyApp.csproj",
+      "packagesPath": "C:\\Users\\BHAVJOSH\\.nuget\\packages\\",
+      "outputPath": "c:\\Projects\\Starter Templates\\starter-templates\\MyApp\\MyApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\BHAVJOSH\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "c:\\Projects\\Starter Templates\\starter-templates\\MyApp\\MyApp.BAL\\MyApp.BAL.csproj": {
+              "projectPath": "c:\\Projects\\Starter Templates\\starter-templates\\MyApp\\MyApp.BAL\\MyApp.BAL.csproj"
+            },
+            "C:\\Projects\\Starter Templates\\starter-templates\\MyApp\\MyApp.DAL\\MyApp.DAL.csproj": {
+              "projectPath": "C:\\Projects\\Starter Templates\\starter-templates\\MyApp\\MyApp.DAL\\MyApp.DAL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Softwares\\dotnet-sdk-8.0.204-win-x64\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
